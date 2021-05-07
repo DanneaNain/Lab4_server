@@ -23,7 +23,7 @@ int main(int argc,char*argv[])
   if(bind(socket_desc,(struct sockaddr*)&server,sizeof(server))<0)
   {
    puts("bind failed");
-  }
+}
 
   puts("bind done");
 
@@ -42,3 +42,4 @@ int main(int argc,char*argv[])
    puts("Connection accepted");
    return 0;
 }
+
